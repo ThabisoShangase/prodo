@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="za.co.thecompany.mapping.UserInfo" table="user_info" schema="prodo_data">
+        <id name="userId" column="user_id"/>
+        <property name="userName" column="user_name"/>
+        <property name="firstName" column="first_name"/>
+        <property name="lastName" column="last_name"/>
+        <property name="profileStatusId" column="profile_status_id"/>
+        <many-to-one name="profileStatusByProfileStatusId" class="za.co.thecompany.mapping.ProfileStatus">
+            <column name="profile_status_id"/>
+        </many-to-one>
+        <set name="portfolios" inverse="true">
+            <key>
+                <column name="user_id"/>
+            </key>
+            <one-to-many not-found="ignore" class="za.co.thecompany.mapping.Portfolio"/>
+        </set>
+        <set name="posts" inverse="true">
+            <key>
+                <column name="user_id"/>
+            </key>
+            <one-to-many not-found="ignore" class="za.co.thecompany.mapping.Post"/>
+        </set>
+    </class>
+</hibernate-mapping>

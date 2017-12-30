@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="za.co.thecompany.mapping.CommentFile" table="comment_file" schema="prodo_data">
+        <id name="commentFileId" column="comment_file_id"/>
+        <property name="commentId" column="comment_id"/>
+        <property name="fileId" column="file_id"/>
+        <many-to-one name="commentInfo" class="za.co.thecompany.mapping.CommentInfo">
+            <column name="comment_id"/>
+        </many-to-one>
+        <many-to-one name="fileInfo" class="za.co.thecompany.mapping.FileInfo">
+            <column name="file_id"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

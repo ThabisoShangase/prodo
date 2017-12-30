@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/prodo_data</property>
+        <property name = "hibernate.connection.username">root</property>
+        <property name = "hibernate.connection.password">SHNtha012</property>
+
+        <mapping resource="hibernate/mapping/CommentFile.hbm.xml"/>
+        <mapping resource="hibernate/mapping/CommentInfo.hbm.xml"/>
+        <mapping resource="hibernate/mapping/FileInfo.hbm.xml"/>
+        <mapping resource="hibernate/mapping/Portfolio.hbm.xml"/>
+        <mapping resource="hibernate/mapping/PortfolioAssociatedFile.hbm.xml"/>
+        <mapping resource="hibernate/mapping/Post.hbm.xml"/>
+        <mapping resource="hibernate/mapping/PostFile.hbm.xml"/>
+        <mapping resource="hibernate/mapping/ProfileStatus.hbm.xml"/>
+        <mapping resource="hibernate/mapping/UserInfo.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
