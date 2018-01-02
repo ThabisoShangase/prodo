@@ -13,7 +13,8 @@
         <module>models</module>
         <module>configuration</module>
         <module>Application</module>
-        <module>user-utils</module>
+        <module>security</module>
+        <module>persistence</module>
     </modules>
 
     <packaging>pom</packaging>
