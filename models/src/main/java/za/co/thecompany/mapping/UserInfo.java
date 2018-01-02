@@ -7,9 +7,10 @@ import java.util.Collection;
  */
 public class UserInfo {
     private Long userId;
-    private String userName;
+    private String username;
     private String firstName;
     private String lastName;
+    private String userRole;
     private Long profileStatusId;
     private Collection<Portfolio> portfolios;
     private Collection<Post> posts;
@@ -23,12 +24,12 @@ public class UserInfo {
         this.userId = userId;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String userName) {
+        this.username = userName;
     }
 
     public String getFirstName() {
@@ -47,6 +48,14 @@ public class UserInfo {
         this.lastName = lastName;
     }
 
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
     public Long getProfileStatusId() {
         return profileStatusId;
     }
@@ -63,7 +72,7 @@ public class UserInfo {
         UserInfo userInfo = (UserInfo) o;
 
         if (userId != null ? !userId.equals(userInfo.userId) : userInfo.userId != null) return false;
-        if (userName != null ? !userName.equals(userInfo.userName) : userInfo.userName != null) return false;
+        if (username != null ? !username.equals(userInfo.username) : userInfo.username != null) return false;
         if (firstName != null ? !firstName.equals(userInfo.firstName) : userInfo.firstName != null) return false;
         if (lastName != null ? !lastName.equals(userInfo.lastName) : userInfo.lastName != null) return false;
         if (profileStatusId != null ? !profileStatusId.equals(userInfo.profileStatusId) : userInfo.profileStatusId != null)
@@ -75,7 +84,7 @@ public class UserInfo {
     @Override
     public int hashCode() {
         int result = userId != null ? userId.hashCode() : 0;
-        result = 31 * result + (userName != null ? userName.hashCode() : 0);
+        result = 31 * result + (username != null ? username.hashCode() : 0);
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (profileStatusId != null ? profileStatusId.hashCode() : 0);

@@ -6,9 +6,10 @@
 
     <class name="za.co.thecompany.mapping.UserInfo" table="user_info" schema="prodo_data">
         <id name="userId" column="user_id"/>
-        <property name="userName" column="user_name"/>
+        <property name="username" column="username"/>
         <property name="firstName" column="first_name"/>
         <property name="lastName" column="last_name"/>
+        <property name="userRole" column="user_role"/>
         <property name="profileStatusId" column="profile_status_id"/>
         <many-to-one name="profileStatusByProfileStatusId" class="za.co.thecompany.mapping.ProfileStatus">
             <column name="profile_status_id"/>
