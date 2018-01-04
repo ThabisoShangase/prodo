@@ -7,7 +7,6 @@
     <class name="za.co.thecompany.mapping.Post" table="post" schema="prodo_data">
         <id name="postId" column="post_id"/>
         <property name="postDate" column="post_date"/>
-        <property name="userId" column="user_id"/>
         <property name="postMessage" column="post_message"/>
         <many-to-one name="userInfo" class="za.co.thecompany.mapping.UserInfo">
             <column name="user_id"/>

@@ -7,7 +7,6 @@
     <class name="za.co.thecompany.mapping.Portfolio" table="portfolio" schema="prodo_data">
         <id name="portfolioId" column="portfolio_id"/>
         <property name="heading" column="heading"/>
-        <property name="userId" column="user_id"/>
         <many-to-one name="userInfo" class="za.co.thecompany.mapping.UserInfo">
             <column name="user_id"/>
         </many-to-one>

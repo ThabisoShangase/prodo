@@ -6,8 +6,6 @@
 
     <class name="za.co.thecompany.mapping.PostFile" table="post_file" schema="prodo_data">
         <id name="postFileId" column="post_file_id"/>
-        <property name="postId" column="post_id"/>
-        <property name="fileId" column="file_id"/>
         <many-to-one name="post" class="za.co.thecompany.mapping.Post">
             <column name="post_id"/>
         </many-to-one>

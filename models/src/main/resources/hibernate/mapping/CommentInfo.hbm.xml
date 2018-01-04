@@ -7,7 +7,6 @@
     <class name="za.co.thecompany.mapping.CommentInfo" table="comment_info" schema="prodo_data">
         <id name="commentId" column="comment_id"/>
         <property name="commentMessage" column="comment_message"/>
-        <property name="postId" column="post_id"/>
         <many-to-one name="post" class="za.co.thecompany.mapping.Post">
             <column name="post_id"/>
         </many-to-one>

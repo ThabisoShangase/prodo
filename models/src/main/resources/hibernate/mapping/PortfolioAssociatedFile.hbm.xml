@@ -7,8 +7,6 @@
     <class name="za.co.thecompany.mapping.PortfolioAssociatedFile" table="portfolio_associated_file"
            schema="prodo_data">
         <id name="asscociatedFileId" column="asscociated_file_id"/>
-        <property name="portfolioId" column="portfolio_id"/>
-        <property name="fileId" column="file_id"/>
         <many-to-one name="portfolio" class="za.co.thecompany.mapping.Portfolio">
             <column name="portfolio_id"/>
         </many-to-one>

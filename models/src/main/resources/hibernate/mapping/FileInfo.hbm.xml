@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="za.co.thecompany.mapping.FileInfo" table="file_info" schema="prodo_data">
-        <id name="fileId" column="file_id"/>
+        <id name="fileId" column="file_id">
+            <generator class="identity"/>
+        </id>
         <property name="fileName" column="file_name"/>
         <property name="fileNize" column="file_nize"/>
         <property name="filePath" column="file_path"/>

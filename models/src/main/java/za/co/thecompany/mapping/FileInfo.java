@@ -1,11 +1,12 @@
 package za.co.thecompany.mapping;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
  * Created by thabiso.shangase on 2017/12/30.
  */
-public class FileInfo {
+public class FileInfo implements Serializable {
     private Long fileId;
     private String fileName;
     private String fileNize;

@@ -1,11 +1,12 @@
 package za.co.thecompany.mapping;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
  * Created by thabiso.shangase on 2017/12/30.
  */
-public class ProfileStatus {
+public class ProfileStatus implements Serializable {
     private String header;
     private Long profileStatusId;
     private String profilePicturePath;

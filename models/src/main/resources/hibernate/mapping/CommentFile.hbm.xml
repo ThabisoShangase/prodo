@@ -6,8 +6,6 @@
 
     <class name="za.co.thecompany.mapping.CommentFile" table="comment_file" schema="prodo_data">
         <id name="commentFileId" column="comment_file_id"/>
-        <property name="commentId" column="comment_id"/>
-        <property name="fileId" column="file_id"/>
         <many-to-one name="commentInfo" class="za.co.thecompany.mapping.CommentInfo">
             <column name="comment_id"/>
         </many-to-one>
