@@ -9,6 +9,7 @@ import java.util.Collection;
 public class UserInfo implements Serializable {
     private Long userId;
     private String username;
+    private String userPassword;
     private String firstName;
     private String lastName;
     private String userRole;
@@ -30,6 +31,14 @@ public class UserInfo implements Serializable {
 
     public void setUsername(String userName) {
         this.username = userName;
+    }
+
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 
     public String getFirstName() {

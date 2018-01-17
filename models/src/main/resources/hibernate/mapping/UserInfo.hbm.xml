@@ -7,6 +7,7 @@
     <class name="za.co.thecompany.mapping.UserInfo" table="user_info" schema="prodo_data">
         <id name="userId" column="user_id"/>
         <property name="username" column="username"/>
+        <property name="userPassword" column="user_password"/>
         <property name="firstName" column="first_name"/>
         <property name="lastName" column="last_name"/>
         <property name="userRole" column="user_role"/>
@@ -26,4 +27,11 @@
             <one-to-many not-found="ignore" class="za.co.thecompany.mapping.Post"/>
         </set>
     </class>
+
+    <sql-query name="FIND_USER_BY_USERNAME">
+        <return alias="userInfo" class="za.co.thecompany.mapping.UserInfo"/>
+            <![CDATA[
+                SELECT * FROM user_info ui where ui.username = :username
+            ]]>
+    </sql-query>
 </hibernate-mapping>
