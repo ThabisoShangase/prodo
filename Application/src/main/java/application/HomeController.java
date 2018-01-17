@@ -8,6 +8,13 @@ public class HomeController {
 
     @RequestMapping("/ngena")
     public String ngena() {
-        return "Yah Ngena Please";
+        System.out.println("/phuma");
+        return "Nah Phuma Please";
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        System.out.println("/login");
+        return "<b>Please Login Dude</b>";
     }
 }

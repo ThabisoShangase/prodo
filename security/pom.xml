@@ -13,6 +13,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>za.co.thecompany</groupId>
+            <artifactId>persistence</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
         </dependency>

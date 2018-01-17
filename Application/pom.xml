@@ -11,5 +11,12 @@
 
     <artifactId>Application</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>za.co.thecompany</groupId>
+            <artifactId>security</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
