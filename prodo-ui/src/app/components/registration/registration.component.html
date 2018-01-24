@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="pull-down">
+        <div class="row form-group">
+            <div class="col-sm-3 mx-auto input-group input-group-sm">
+                <input type="text"
+                       class="form-control"
+                       placeholder="username"
+                       [(ngModel)]="userInfo.username">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-3 mx-auto input-group input-group-sm">
+                <input type="password"
+                       class="form-control"
+                       placeholder="password"
+                       [(ngModel)]="userInfo.userPassword">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 mx-auto">
+                <button type="button" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
