@@ -1,0 +1,38 @@
+.sidebar-global {
+    max-height: 100%;
+    height: 100%;
+    width: 18%;
+    background-color: darkolivegreen;
+}
+
+.sidebar-heading {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.heading {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    color: azure;
+}
+
+.sidebar-elements {
+    margin-left: 3%;
+}
+
+
+.sidebar-item {
+    padding-top: 4%;
+    color: azure;
+}
+
+.sidebar-below {
+    /*background-color: darkolivegreen;*/
+}
+
+.right-components {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    margin-left: 15%;
+}
