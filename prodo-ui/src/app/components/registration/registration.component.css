@@ -1,3 +1,11 @@
+h1 {
+    display: inline-flex;
+}
+
 .pull-down {
-    padding-top: 20%;
+    padding-top: 12%;
+}
+
+.submit-button {
+    background-color: cornflowerblue;
 }

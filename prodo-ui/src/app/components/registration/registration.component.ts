@@ -9,7 +9,13 @@ import {UserInfo} from "../../../model/UserInfo";
 
 export class RegistrationComponent {
     private userInfo: UserInfo = new UserInfo();
+    private password: string;
+    private registrationConfirmed: boolean = false;
 
     constructor() {
+    }
+
+    private retrieveUsername() {
+
     }
 }

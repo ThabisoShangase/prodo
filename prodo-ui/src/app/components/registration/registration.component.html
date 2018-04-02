@@ -1,26 +1,64 @@
-<div class="container">
-    <div class="pull-down">
-        <div class="row form-group">
-            <div class="col-sm-3 mx-auto input-group input-group-sm">
-                <input type="text"
-                       class="form-control"
-                       placeholder="username"
-                       [(ngModel)]="userInfo.username">
-            </div>
-        </div>
+<div class="row form-group">
+    <label class="col-sm-3 mx-auto label col-form-label">Register A Prodo Account</label>
+</div>
 
-        <div class="row form-group">
-            <div class="col-sm-3 mx-auto input-group input-group-sm">
-                <input type="password"
-                       class="form-control"
-                       placeholder="password"
-                       [(ngModel)]="userInfo.userPassword">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 mx-auto">
-                <button type="button" class="btn btn-primary">Sign in</button>
-            </div>
-        </div>
+<div class="row">
+    <div class="col-sm-5 mx-auto input-group input-group-sm">
+        <mat-form-field class="prodo-input">
+            <input matInput
+                   type="text"
+                   placeholder="First Name"
+                   [(ngModel)]="userInfo.firstName">
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-5 mx-auto input-group input-group-sm">
+        <mat-form-field class="prodo-input">
+            <input matInput
+                   type="text"
+                   placeholder="Last Name"
+                   [(ngModel)]="userInfo.lastName">
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-5 mx-auto input-group input-group-sm">
+        <mat-form-field class="prodo-input">
+            <input matInput
+                   type="text"
+                   placeholder="username"
+                   (change)="retrieveUsername()"
+                   [(ngModel)]="userInfo.username">
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-5 mx-auto input-group input-group-sm">
+        <mat-form-field class="prodo-input">
+            <input matInput
+                   type="password"
+                   placeholder="password"
+                   [(ngModel)]="userInfo.userPassword">
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-5 mx-auto input-group input-group-sm">
+        <mat-form-field class="prodo-input">
+            <input matInput
+                   type="password"
+                   placeholder="confirm password"
+                   [(ngModel)]="password">
+        </mat-form-field>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-5 mx-auto">
+        <button mat-raised-button class="submit-button" [disabled]="registrationConfirmed">Sign in</button>
     </div>
 </div>
